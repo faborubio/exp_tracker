@@ -1,10 +1,23 @@
 
 import './App.css';
 
+import { Graph } from './components/Graph';
+
 function App() {
   return (
     <div className="App">
-      <h1>Gastos Tracker</h1>
+      <div className="container mx-auto max-w-6xl text-center drop-shadow-lg text-gray-800">
+        <h1 className="text-4xl py-8 mb-10 bg-slate-800 text-white rounded">Gastos Tracker</h1>
+
+        {/* Columns */}
+        <div className="grid md:grid-cols-2 gap-4">
+          {/* Chart */}
+          <Graph>
+            
+          </Graph>
+          {/* form */}
+        </div>
+      </div>
     </div>
   );
 }
